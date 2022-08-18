@@ -10,11 +10,31 @@
 </head>
 <body class="bg-slate-200">
     <header>
-        <h1 class="text-5xl text-center mt-6 font-medium">Functional Bank</h1>
+        <!-- Login Page heading -->
+        <h1 id="login-header" class="text-5xl text-center mt-6 font-medium">Functional Bank</h1>
+
+        <!-- Bank Page heading -->
+        <h1 id="bank-header" class="text-5xl text-center mt-6 hidden">Let's Get Some  <span class="font-semibold text-violet-600">Moooony</span>!!!</h1>
     </header>
     <main>
+        <!-- login section -->
+        <section id="login-dection" class="bg-blue-300 w-9/12 mx-auto mt-12 p-8 rounded-lg">
+            <h3 class="font-medium text-3xl my-8 text-center">Please Login</h3>
+            <div class="mx-auto">
+                <input type="email" name="" id="user-email" placeholder="Your Email Address" class="w-9/12 block mb-4 p-3 text-center mx-auto rounded-md">
+                <input type="password" name="" id="user-password" placeholder="Your Password" class="w-9/12 block mb-4 p-3 text-center mx-auto rounded-md">
+                <button class="bg-lime-400 hover:bg-lime-700 text-gray-900 font-bold px-14 py-3 block m-auto rounded-md" id="login-btn">Log In</button>
+            </div>
+        </section>
+        <!-- email and password section -->
+        <section id="login-footer" class="text-3xl text-center bg-green-400 w-9/12 mx-auto mt-10 py-6 rounded-lg">
+            <h1>please use the given email and password</h1>
+            <p>email: <span class="text-red-600">sontan@baap.com</span></p>
+            <p>password: <span class="text-red-600">secret</span></p>
+        </section>
+
         <!-- ballance and transaction -->
-        <section class="mt-8">
+        <section id="bank-section-1" class="mt-8 hidden">
             <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
                 <div class="bg-yellow-600 p-8 rounded-lg">
                     <h4 class="text-3xl">Deposit</h4>
@@ -30,8 +50,9 @@
                 </div>
             </div>
         </section>
+
         <!-- deposit and withdraw section -->
-        <section class="mt-8 w-3/4 mx-auto">
+        <section id="bank-section-2" class="mt-8 w-3/4 mx-auto hidden mt-8">
             <div class="grid grid-cols-2 gap-4">
                 <div class="bg-violet-400 p-8 rounded-lg">
                     <h3 class="text-4xl text-white mb-4">Your Deposit</h3>
@@ -48,7 +69,7 @@
     </main>
     
 
-
+    <script src="js/login.js"></script>
     <!-- <script src="js/deposit-withdraw.js"></script> -->
     <script src="js/deposit-withdraw-shorthand.js"></script>
 </body>
